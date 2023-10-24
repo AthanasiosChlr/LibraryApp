@@ -1,54 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url("./background.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-header { 
-    width: 75%;
-    height: 15vh;
-    margin: auto;
-    color: #ffd277;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul li{
-    list-style: none;
-    display: inline-block;
-    align-items: center;
-    margin:0 20px;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.addBookBtnContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
- 
 #bookFormBackground{
     position: fixed;
     top: 0;
@@ -127,39 +76,6 @@ input[type="number"] {
     border-radius: 3px;
 }
 
-#addBookBtn , #sign-inBtn , #submitBookBtn{
-    width: 140px;
-    height: 45px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
-    background-size: 250%;
-    background-position: left;
-    color: #ffd277;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition-duration: 1s;
-    overflow: hidden;
-}
-  
-#addBookBtn::before, #sign-inBtn::before , #submitBookBtn::before{
-    position: absolute;
-    content: "+ ADD BOOK";
-    color: #ffd277;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 97%;
-    height: 90%;
-    border-radius: 8px;
-    transition-duration: 1s;
-    background-color: rgba(0, 0, 0, 0.842);
-    background-size: 200%;
-}
-
 .readCheck{
     display: flex;
     justify-content: center;
@@ -168,40 +84,6 @@ input[type="number"] {
 
 #read{
     margin: 3px;
-}
-
-.submitBookDiv {
-    display: flex;
-    justify-content: center;
-}
-
-#submitBookBtn{
-    margin:25px;
-    margin-top: 0;
-    
-}
-
-#sign-inBtn::before {
-    content: "SIGN IN";
-}
-
-#submitBookBtn::before {
-    content: "Add Book";
-}
-
-
-#addBookBtn:hover , #sign-inBtn:hover, #submitBookBtn:hover{
-    background-position: right;
-    transition-duration: 1s;
-}
-  
-#addBookBtn:hover::before , #sign-inBtn:hover::before, #submitBookBtn::before{
-    background-position: right;
-    transition-duration: 1s;
-}
-  
-#addBookBtn:active , #sign-inBtn:active , #submitBookBtn:active{
-    transform: scale(0.95);
 }
 
 #book-container {
@@ -290,10 +172,17 @@ input[type="number"] {
 }
 
 .readBtn {
-    background-color: #63da63;
     color: #fff;
     margin-right: 10px;
 }
+
+.readBtn.read {
+    background-color: #63da63; 
+}
+  
+  .readBtn.not-read {
+    background-color: #e04f63; 
+  }
 
 .removeBtn {
     background-color: #E6BE8A;
@@ -312,3 +201,4 @@ input[type="number"] {
     position: relative;
     z-index: 0;
 }
+
