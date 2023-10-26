@@ -44,8 +44,11 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Copy background.jpg to dist
+        run: cp images/background.jpg dist/images/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.LIBRARYAPP }}
           publish_dir: ./dist
