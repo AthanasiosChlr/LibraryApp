@@ -25,9 +25,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Copy background.jpg to dist/images
-        run: cp LibraryApp/images/background.jpg dist/images/
-
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
