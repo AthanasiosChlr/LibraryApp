@@ -1,8 +1,9 @@
 {
-  "name": "reactapp",
+  "name": "library-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://athanasioschlr.github.io/LibraryApp/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
