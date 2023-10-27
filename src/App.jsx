@@ -7,9 +7,7 @@ import background from "../images/background.jpg"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <React.StrictMode>
-    <div className="background"> 
       <Header />
       <Form />
-    </div>
  </React.StrictMode>
 );
