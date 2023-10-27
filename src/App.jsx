@@ -6,10 +6,10 @@ import Form from './Form'
 import background from "../images/background.jpg"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <>
-    <Header />
-    <Form />
-    </>
-  </React.StrictMode>
+ <React.StrictMode>
+    <div className="background"> 
+      <Header />
+      <Form />
+    </div>
+ </React.StrictMode>
 );
