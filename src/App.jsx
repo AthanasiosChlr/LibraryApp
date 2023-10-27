@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom/client'
 import './CSS/index.css'
 import Header from './Header'
 import Form from './Form'
-import background from "../images/background.jpg"
+import background from "background.jpg"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <React.StrictMode>
-      <div className="root-div">
         <Header />
         <Form />
-      </div>
  </React.StrictMode>
 );
 
