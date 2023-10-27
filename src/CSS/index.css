@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("/LibraryApp/images/background.jpg");
+  background-image: url("https://github.com/AthanasiosChlr/LibraryApp/blob/main/images/background.jpg?raw=true");
   background-position: center;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
