@@ -7,7 +7,13 @@ import background from "../images/background.jpg"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <React.StrictMode>
-      <Header />
-      <Form />
+      <div className="root-div">
+        <Header />
+        <Form />
+      </div>
  </React.StrictMode>
 );
+
+document.body.style.backgroundImage = `url(${background})`;
+document.body.style.backgroundPosition = 'center';
+document.body.style.backgroundAttachment = 'fixed';
